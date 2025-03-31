@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservation|Hotel Asphodel</title>
+	<style>
+		/* Add some basic styling to make the page look decent */
+		body {
+			font-family: Arial, sans-serif;
+            background:url('PICS/WhatsApp Image 2024-04-09 at 16.13.49_2dd7a43d.jpg');
+            background-size:100%;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+            width:430px;
+            height:620px;
+            background:rgba(0,0,0,.6);
+            margin:auto;
+            margin-top:50px;
+            border-radius:5px;
+            color:white;
+            padding:50px;
+        }
+		
+		.form-group {
+			margin-bottom: 0px;
+		}
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input-field {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		.button {
+			background-color: #59b3c3;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #99ddf2;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Hotel Reservation</h1>
+		<form>
+            <div class="form-group">
+				<label class="label" for="name">Name</label>
+				<input type="text" id="name" class="input-field" placeholder="Enter your Name">
+			</div>
+			<div class="form-group">
+				<label class="label" for="checkin">Check-in Date</label>
+				<input type="date" id="checkin" class="input-field">
+			</div>
+			<div class="form-group">
+				<label class="label" for="checkout">Check-out Date</label>
+				<input type="date" id="checkout" class="input-field">
+			</div>
+			<div class="form-group">
+				<label class="label" for="roomtype">Room Type</label>
+				<select id="roomtype" class="input-field">
+					<option value="single">Single</option>
+					<option value="double">Double</option>
+					<option value="suite">Suite</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="label" for="adults">Number of Adults</label>
+				<input type="number" id="adults" class="input-field">
+			</div>
+			<div class="form-group">
+				<label class="label" for="children">Number of Children</label>
+				<input type="number" id="children" class="input-field">
+			</div>
+			<div class="form-group">
+				<button class="button" type="submit">Book Now</button>
+			</div>
+		</form>
+	</div>
+
+
+</body>
+</html>

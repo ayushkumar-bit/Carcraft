@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asphodel Hotel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="bg">
+        
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="pics/logo.png" alt="Asphodel" class="logo">
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link me-2" href="rooms.html">Rooms & Suites</a></li>
+                    <li class="nav-item"><a class="nav-link me-2" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle me-2" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item me-2" href="dinning.html">Dine-In</a>
+                            <a class="dropdown-item me-2" href="club.html">Club</a>
+                            <a class="dropdown-item me-2" href="Transport.html">Transport</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link me-2" href="contactus.php">Contact Us</a></li>
+
+                    <li class="nav-item"><a class="nav-link me-2" href="#"><i class="fas fa-globe"></i></a></li>
+                    <li class="nav-item"><a class="nav-link me-2" href="#"><i class="fas fa-user"></i></a></li>
+                    <li class="nav-item"><a class="nav-link me-2" href="#"><i class="fab fa-instagram"></i></a></li>
+
+                </ul>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-outline-dark shadow-none me-lg-2 me-3" data-bs-toggle="modal" data-bs-target="#LoginModel">
+                        Login
+                    </button>
+                </div>
+                
+            </div>
+       </nav>      
+                  
+        <!-- Modal -->
+        <div class="modal fade" id="LoginModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="">
+                        <div class="modal-header">
+                            <h5 class="modal-title d-flex align-items-center" >
+                                <i class="fa-regular fa-user"></i>&nbsp; &nbsp;User login
+                            </h5>
+                            <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-control shadow-none">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="Password" class="form-control shadow-none">
+                            </div>
+                            <div class="d-flex align-items-center justify-conent-between">
+                                <button type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                                &nbsp; &nbsp;<a href="javascript: void" class="text-secondary text-decoration-none">Forgot Password?</a>
+                                &nbsp; &nbsp; &nbsp; &nbsp;Create New Account?<a class="text-secondary text-decoration-none" href="sign up.html">Sign Up</a>
+                                
+            
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+         
+        <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Hello.Salut.Hola</h1>
+                    <p>Our Hotels & Resorts remain stylish, modern, forward-thinking global leader of hospitality and we help make traveling easier with our smart design, innovative restaurant concepts, unique activities, nature and authentic hospitality.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <div class="bg2">
+         <!-- Booking Form Section -->
+    <section class="booking-form">
+        <div class="container">
+            <form action="process_booking.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                        <label for="checkInDate">Check-in:</label>
+                        <input type="date" class="form-control" id="checkInDate" name="checkInDate">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="checkOutDate">Check-out:</label>
+                        <input type="date" class="form-control" id="checkOutDate" name="checkOutDate">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="adults">Adults:</label>
+                        <input type="number" class="form-control" id="adults" name="adults" value="1">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="children">Children:</label>
+                        <input type="number" class="form-control" id="children" name="children" value="0">
+                    </div>
+                    <div class="form-group col-md-2 align-self-end">
+                        <button type="submit" class="btn btn-primary btn-block">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+       
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 image">
+                    <img src="pics/hotel1.jpg">
+                    <p><img src="pics/hotel2.jpg"></p>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="welcome-text">
+                        <br>
+                        <br>
+                        <br>
+                        <h5>Raising Comfort to the Highest Level</h5>
+                        <h2>Welcome to Hotel Asphodel</h2>
+                        <p>The Hotel asphodel is the right choice for visitors who are searching for a combination of charm, peace, quiet, and a convenient position from where to explore surroundings.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <br>
+    <br>
+    <!--Amenities Section-->
+    <section class="amenities">
+        <div class="backg"></div>
+        <div class="amenities-box">
+            <table bgcolor="#4baed4">
+                <tr>
+                    <td colspan="2" id="tr1"><h3>OUR AMENITIES</h3><P>The hotel is arranged on three floors without a lift. On the ground floor, apart from the reception, there is a comfortable lounge where you can sit and drink tea.</P></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-wifi"></i>  Wi-Fi</td>
+                    <td><i class="fa-solid fa-ship"></i>  Boat Tours</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-dumbbell"></i>  Gym & Tours</td>
+                    <td><i class="fa-solid fa-spa"></i>  Spa & Massage</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-water-ladder"></i>  Swimming Pool</td>
+                    <td><i class="fa-duotone fa-wave"></i>  Beaches</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-person-hiking"></i>  Trekking</td>
+                    <td><i class="fa-solid fa-microphone"></i>  Conference Rooms</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+    <br>
+    <br>
+    <br>
+    <!--Rooms Section -->
+    <section class="rooms-suites text-center py-5">
+        <div class="container">
+            <h2 class="text-uppercase text-muted small">Raising Comfort to the Highest Level</h2>
+            <h1 class="mb-4">Rooms & Suites</h1>
+            <button class="btn btn-gold mb-5 custom"><a href="rooms.html">Veiw All</a></button>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="pics/room1.jpg" class="img-fluid rounded" alt="Room Image 1">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#info1">
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                    <div id="info1" class="collapse">
+                        <p><h3>One King Bed Suite</h3>The King Bed Suite combines both practicality and distinct areas, featuring a roomy bedroom with a king-size bed and a separate living space furnished with a sofa bed. This suite is suitable for accommodating up to four individuals and comes with premium amenities to enhance the experience for the whole family.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="pics/room2.jpg" class="img-fluid rounded" alt="Room Image 2">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#info2">
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                    <div id="info2" class="collapse">
+                        <p><h3>The luxury Penthouse</h3>The Penthouse Suite is a stunning option for a special occasion or multiple night stay with friends or family, with large spacious Balcony, perfect for entertaining or simply relaxing and enjoying the peaceful and tranquil surroundings. </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="pics/room3.jpg" class="img-fluid rounded" alt="Room Image 3">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#info3">
+                        <i class="fas fa-plus-circle"></i>
+                    </button>
+                    <div id="info3" class="collapse">
+                        <p><h3>Queen Standard Room</h3>This room offers simplicity and comfort, featuring a Queen-sized bed and suitable for up to two guests. It’s an ideal choice for business travelers, thanks to its stylish desk, and it’s also convenient for families, as it comes equipped with a mini fridge, microwave, and coffee maker, allowing you to store and reheat leftovers from local restaurants. This standard room is a fantastic option for those seeking affordable travel without compromising essential amenities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--people Section -->
+    <section class="amenities1">
+        <div class="backg"></div>
+        <div class="amenities-box1">
+            <table bgcolor="#4baed4">
+                <tr>
+                    <td colspan="2" id="tr1">At the Heart of Communities<h3>People Say</h3><br><P><i>"We stayed here with our family and are fully satisfied with our vacation. Rooms are very modern, the food is very delicious and service is just perfect. We will for sure come back"</i></P></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Resturant Section -->
+    <section class="restutant">
+        <div class="container">
+            <div class="image-container">
+              <img src="pics/restro1.jpeg" alt="Restaurant Interior" width="350" height="210">
+            </div>
+            <div class="text-container">
+                <br>
+              <h2 class="restaurant-title">Our Restaurant</h2>
+              <p class="restaurant-description">The buffet breakfast is served in the lounge on the ground floor and also outside on our little patio.</p>
+              
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-plus"></i> Indian Kitchen
+                      </button>
+                    </h3>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>Experience the vibrant flavors of India with our gourmet Indian kitchen, where traditional recipes meet modern culinary artistry, crafted with the finest ingredients. Indulge in a luxurious dining experience that tantalizes your senses with exquisite dishes and impeccable service.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-plus"></i> Italian Kitchen
+                      </button>
+                    </h3>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Delight in the essence of Italy with our refined Italian kitchen, offering a symphony of authentic flavors and contemporary culinary techniques. Savor luxurious, handcrafted dishes made from the freshest ingredients, paired with impeccable service in an elegant setting.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-plus"></i> Chinese Kitchen
+                      </button>
+                    </h3>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>Discover the elegance of our Chinese kitchen, where authentic flavors are expertly crafted into sophisticated culinary masterpieces. Delight in an opulent dining experience that harmonizes tradition with innovation, offering a feast for both the palate and the senses.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h3 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-plus"></i> Indian Cuisine
+                      </button>
+                    </h3>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <p>Discover the essence of Indian cuisine, where rich spices and authentic flavors create a symphony of taste in every dish. Savor the opulence of our expertly crafted meals, offering a luxurious and unforgettable dining experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

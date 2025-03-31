@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarCraft</title>
+</head>
+<body>
+    <h1>Welcome to CarCraft</h1>
+
+    <!-- Product Section -->
+    <div>
+        <h2>Car A</h2>
+        <p>Price: $20,000</p>
+        <button class="add-to-cart" data-id="1" data-name="Car A" data-price="20000">Add to Cart</button>
+    </div>
+
+    <div>
+        <h2>Car B</h2>
+        <p>Price: $15,000</p>
+        <button class="add-to-cart" data-id="2" data-name="Car B" data-price="15000">Add to Cart</button>
+    </div>
+
+    <!-- Cart Section -->
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button id="clear-cart">Clear Cart</button>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || []; // Load the cart or start empty
+
+        // Add to Cart
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", () => {
+                const product = {
+                    id: button.dataset.id,
+                    name: button.dataset.name,
+                    price: button.dataset.price
+                };
+
+                cart.push(product); // Add product to the cart
+                localStorage.setItem("cart", JSON.stringify(cart)); // Save the cart
+                alert(`${product.name} added to cart!`);
+                displayCart(); // Update the cart display
+            });
+        });
+
+        // Display Cart
+        function displayCart() {
+            const cartContainer = document.getElementById("cart-items");
+            cartContainer.innerHTML = ""; // Clear current items
+
+            cart.forEach(item => {
+                const div = document.createElement("div");
+                div.innerText = `${item.name} - $${item.price}`;
+                cartContainer.appendChild(div);
+            });
+        }
+
+        // Clear Cart
+        document.getElementById("clear-cart").addEventListener("click", () => {
+            cart = []; // Empty the cart
+            localStorage.removeItem("cart"); // Clear saved cart
+            displayCart(); // Update the display
+        });
+
+        // Show the cart on page load
+        displayCart();
+    </script>
+</body>
+</html>
